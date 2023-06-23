@@ -30,6 +30,38 @@ section > .inner {
   }
 }
 
+/* 인트로 */
+.intro {
+  position: fixed;
+  height: 100vh;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 0;
+  width: 100%;
+  z-index: 11;
+  background: rgb(255, 255, 255);
+  background: linear-gradient(
+    360deg,
+    rgba(255, 255, 255, 1) 0%,
+    rgba(244, 223, 223, 1) 48%,
+    rgba(232, 190, 190, 1) 100%
+  );
+}
+.intro .inner {
+  position: absolute;
+  text-align: center;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #333;
+  font-size: 24px;
+  width: 100%;
+}
+.intro .inner p:nth-of-type(2) {
+  font-size: 30px;
+  margin-top: 10px;
+}
+
 /* 메인 */
 .main img {
   width: 100%;

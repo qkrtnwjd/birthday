@@ -3,6 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta property="og:image" content="img/og.jpg" />
     <title>💕여나 생일 축하행💕</title>
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="common.css" />
@@ -257,10 +258,12 @@
         $(".mySwiper .swiper-slide").click(function () {
           $(".swiper_back").show();
           $(".mySwiper2").show();
+          $("body").css({ overflow: "hidden" });
         });
         $(".close").click(function () {
           $(".swiper_back").hide();
           $(".mySwiper2").hide();
+          $("body").css({ overflow: "scroll" });
         });
       });
       var swiper = new Swiper(".mySwiper", {
