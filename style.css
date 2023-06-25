@@ -1,6 +1,5 @@
 .wrap {
   width: 100%;
-  max-width: 400px;
   margin: 0 auto;
   background-color: #fff;
   padding-bottom: 100px;
@@ -167,7 +166,6 @@ section > .inner {
   bottom: 0;
   width: 100%;
   height: 100%;
-  max-width: 400px;
   margin: 0 auto;
   z-index: 2;
   display: none;
@@ -226,6 +224,9 @@ section > .inner {
   position: relative;
   margin-bottom: 10px;
 }
+.wrap .mySwiper .swiper-slide:nth-of-type(2n) {
+  margin-right: 0 !important;
+}
 .wrap .mySwiper .swiper-slide img {
   width: 100%;
   object-fit: cover;
@@ -234,6 +235,7 @@ section > .inner {
 }
 .wrap .swiper-free-mode > .swiper-wrapper {
   flex-wrap: wrap;
+  transform: inherit !important;
   justify-content: center;
 }
 
@@ -255,7 +257,6 @@ section > .inner {
   border: 1px solid rgba(255, 255, 255, 0.18);
   width: 100%;
   padding: 20px;
-  max-width: 400px;
   z-index: 1;
 }
 .bottom_fixed .bottom_inner {
